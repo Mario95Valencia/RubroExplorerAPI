@@ -40,8 +40,8 @@
 
   <ItemGroup>
     <Folder Include="Application\Commands\" />
+    <Folder Include="Domain\Interfaces\IRepositories\" />
     <Folder Include="libs\" />
-    <Folder Include="Domain\" />
   </ItemGroup>
 	<ItemGroup>
 		<None Update=".env">

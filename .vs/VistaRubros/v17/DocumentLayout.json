@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\RepositorioGap\\Jhony\\VistaRubros\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\domain\\interfaces\\idomainservices\\ipacienteatenciondomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\domain\\interfaces\\idomainservices\\ipacienteatenciondomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\application\\records\\response\\pacienteprocedimientodetalleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\application\\records\\response\\pacienteprocedimientodetalleresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\domain\\services\\pacienteatenciondomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\domain\\services\\pacienteatenciondomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\application\\records\\response\\pacienteprocedimientoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\application\\records\\response\\pacienteprocedimientoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\application\\handlers\\getbydatetimepacientesprocedimientoshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\application\\handlers\\getbydatetimepacientesprocedimientoshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\infrastructure\\persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\infrastructure\\persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\wepapi\\controllers\\pacienteprocedimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\wepapi\\controllers\\pacienteprocedimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\application\\records\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\application\\records\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\application\\queries\\getbydatetimepacienteprocedimientoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\application\\queries\\getbydatetimepacienteprocedimientoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\libs\\environmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\libs\\environmentconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\wepapi\\controllers\\pacienteprocedimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\wepapi\\controllers\\pacienteprocedimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\infrastructure\\persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\infrastructure\\persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -35,12 +63,8 @@
       "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\infrastructure\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\application\\records\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\application\\records\\response\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|c:\\repositoriogap\\jhony\\vistarubros\\src\\vistarubros\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C87A9533-FAAE-464B-9CED-3A5698081F40}|src\\VistaRubros\\VistaRubros.csproj|solutionrelative:src\\vistarubros\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,24 +74,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetByDatetimePacienteProcedimientoQuery.cs",
+              "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Queries\\GetByDatetimePacienteProcedimientoQuery.cs",
+              "RelativeDocumentMoniker": "src\\VistaRubros\\Application\\Queries\\GetByDatetimePacienteProcedimientoQuery.cs",
+              "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Queries\\GetByDatetimePacienteProcedimientoQuery.cs",
+              "RelativeToolTip": "src\\VistaRubros\\Application\\Queries\\GetByDatetimePacienteProcedimientoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAUAAACGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T21:22:14.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PacienteAtencionDomainService.cs",
+              "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Domain\\Services\\PacienteAtencionDomainService.cs",
+              "RelativeDocumentMoniker": "src\\VistaRubros\\Domain\\Services\\PacienteAtencionDomainService.cs",
+              "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Domain\\Services\\PacienteAtencionDomainService.cs",
+              "RelativeToolTip": "src\\VistaRubros\\Domain\\Services\\PacienteAtencionDomainService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAYwHwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T21:06:11.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPacienteAtencionDomainService.cs",
+              "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Domain\\Interfaces\\IDomainServices\\IPacienteAtencionDomainService.cs",
+              "RelativeDocumentMoniker": "src\\VistaRubros\\Domain\\Interfaces\\IDomainServices\\IPacienteAtencionDomainService.cs",
+              "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Domain\\Interfaces\\IDomainServices\\IPacienteAtencionDomainService.cs",
+              "RelativeToolTip": "src\\VistaRubros\\Domain\\Interfaces\\IDomainServices\\IPacienteAtencionDomainService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T21:04:45.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PacienteProcedimientoDetalleResponse.cs",
+              "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoDetalleResponse.cs",
+              "RelativeDocumentMoniker": "src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoDetalleResponse.cs",
+              "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoDetalleResponse.cs",
+              "RelativeToolTip": "src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoDetalleResponse.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T20:53:58.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PacienteProcedimientoResponse.cs",
+              "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoResponse.cs",
+              "RelativeDocumentMoniker": "src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoResponse.cs",
+              "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoResponse.cs",
+              "RelativeToolTip": "src\\VistaRubros\\Application\\Records\\Response\\PacienteProcedimientoResponse.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAwwGIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T20:44:18.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetByDatetimePacientesProcedimientosHandler.cs",
+              "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Handlers\\GetByDatetimePacientesProcedimientosHandler.cs",
+              "RelativeDocumentMoniker": "src\\VistaRubros\\Application\\Handlers\\GetByDatetimePacientesProcedimientosHandler.cs",
+              "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Handlers\\GetByDatetimePacientesProcedimientosHandler.cs",
+              "RelativeToolTip": "src\\VistaRubros\\Application\\Handlers\\GetByDatetimePacientesProcedimientosHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T18:27:43.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Program.cs",
               "RelativeDocumentMoniker": "src\\VistaRubros\\Program.cs",
               "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Program.cs",
               "RelativeToolTip": "src\\VistaRubros\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T18:20:22.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "EnvironmentConfiguration.cs",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\libs\\EnvironmentConfiguration.cs",
               "RelativeDocumentMoniker": "src\\VistaRubros\\libs\\EnvironmentConfiguration.cs",
@@ -75,35 +177,38 @@
               "RelativeToolTip": "src\\VistaRubros\\libs\\EnvironmentConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T14:37:22.119Z"
+              "WhenOpened": "2025-04-26T14:37:22.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Infrastructure\\Persistence\\Context\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "src\\VistaRubros\\Infrastructure\\Persistence\\Context\\ApplicationDbContext.cs",
               "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Infrastructure\\Persistence\\Context\\ApplicationDbContext.cs",
               "RelativeToolTip": "src\\VistaRubros\\Infrastructure\\Persistence\\Context\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T18:32:40.153Z"
+              "WhenOpened": "2025-04-24T18:32:40.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "BaseRepository.cs",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Infrastructure\\Repositories\\BaseRepository.cs",
               "RelativeDocumentMoniker": "src\\VistaRubros\\Infrastructure\\Repositories\\BaseRepository.cs",
               "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Infrastructure\\Repositories\\BaseRepository.cs",
               "RelativeToolTip": "src\\VistaRubros\\Infrastructure\\Repositories\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T18:32:31.196Z"
+              "WhenOpened": "2025-04-24T18:32:31.196Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "VistaRubros.http",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\VistaRubros.http",
               "RelativeDocumentMoniker": "src\\VistaRubros\\VistaRubros.http",
@@ -111,11 +216,12 @@
               "RelativeToolTip": "src\\VistaRubros\\VistaRubros.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-24T18:32:16.505Z"
+              "WhenOpened": "2025-04-24T18:32:16.505Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\appsettings.json",
               "RelativeDocumentMoniker": "src\\VistaRubros\\appsettings.json",
@@ -123,11 +229,12 @@
               "RelativeToolTip": "src\\VistaRubros\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-24T18:32:12.877Z"
+              "WhenOpened": "2025-04-24T18:32:12.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Dockerfile",
               "RelativeDocumentMoniker": "src\\VistaRubros\\Dockerfile",
@@ -135,11 +242,12 @@
               "RelativeToolTip": "src\\VistaRubros\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-04-24T17:52:11.858Z"
+              "WhenOpened": "2025-04-24T17:52:11.858Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": ".env",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\.env",
               "RelativeDocumentMoniker": "src\\VistaRubros\\.env",
@@ -152,27 +260,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PacienteProcedimientoController.cs",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\WepApi\\Controllers\\PacienteProcedimientoController.cs",
               "RelativeDocumentMoniker": "src\\VistaRubros\\WepApi\\Controllers\\PacienteProcedimientoController.cs",
               "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\WepApi\\Controllers\\PacienteProcedimientoController.cs",
               "RelativeToolTip": "src\\VistaRubros\\WepApi\\Controllers\\PacienteProcedimientoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T22:57:15.439Z"
+              "WhenOpened": "2025-04-21T22:57:15.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "ApiResponse.cs",
               "DocumentMoniker": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Records\\Response\\ApiResponse.cs",
               "RelativeDocumentMoniker": "src\\VistaRubros\\Application\\Records\\Response\\ApiResponse.cs",
               "ToolTip": "C:\\RepositorioGap\\Jhony\\VistaRubros\\src\\VistaRubros\\Application\\Records\\Response\\ApiResponse.cs",
               "RelativeToolTip": "src\\VistaRubros\\Application\\Records\\Response\\ApiResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T16:36:00.802Z"
+              "WhenOpened": "2025-04-23T16:36:00.802Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -4,6 +4,8 @@ using vistarubros.libs;
 using vistarubros.Infrastructure.Persistence.Context;
 using MicroservicesTemplate.Domain.Repositories;
 using MicroservicesTemplate.Infrastructure.Repositories;
+using vistarubros.Domain.Interfaces.IDomainServices;
+using vistarubros.Domain.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +27,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Añadir servicios con DIP
 builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+builder.Services.AddScoped<IPacienteAtencionDomainService, PacienteAtencionDomainService>();
+
 
 //Este comando ensambla todos los queries, commands y handlers de mi capa de aplicacion
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));

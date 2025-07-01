@@ -79,6 +79,24 @@ namespace vistarubros.Application.Records.Response
         [JsonPropertyName("cueIva")]
         public decimal? CUE_IVA { get; set; }
 
+        [JsonPropertyName("fechaIngreso")]
+        public DateTime? FECHA_INGRESO { get; set; }
+
+        [JsonPropertyName("fechaAlta")]
+        public DateTime? FECHA_ALTA { get; set; }
+
+        [JsonPropertyName("diagnosticoPrincipal")]
+        public string? DIAG_PRINCIPAL { get; set; }
+
+        [JsonPropertyName("diagnosticosSecundarios")]
+        public List<string> DIAGS_SECUNDARIOS { get; set; } = new();
+
+        [JsonPropertyName("complicaciones")]
+        public string? COMPLICACIONES { get; set; }
+
+        [JsonPropertyName("observaciones")]
+        public string? OBSERVACIONES { get; set; }
+
         public PacienteProcedimientoResponse() { }
     }
 }
