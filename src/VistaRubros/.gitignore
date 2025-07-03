@@ -32,7 +32,7 @@ out/
 src/seguridades-ms/Infrastructure/Persistence/Context/
 
 # Ignorar carpeta Entities del dominio
-Domain/Entities/
+# Domain/Entities/
 
  
 # Archivos temporales de Visual Studio y JetBrains
@@ -47,8 +47,4 @@ Domain/Entities/
 # Archivos de configuración sensibles
 .env
 
-# Ignorar carpeta Context del DbContext
-src/seguridades-ms/Infrastructure/Persistence/Context/
  
-# Ignorar carpeta Entities del dominio
-Domain/Entities/

@@ -5,25 +5,25 @@ namespace vistarubros.Application.Records.Response
     public class PacienteProcedimientoDetalleResponse
     {
         [JsonPropertyName("numeroAtencion")]
-        public string NumeroAtencion { get; set; }
+        public string? NumeroAtencion { get; set; }
 
         [JsonPropertyName("historiaClinica")]
-        public string HistoriaClinica { get; set; }
+        public string? HistoriaClinica { get; set; }
 
         [JsonPropertyName("paciente")]
-        public string Paciente { get; set; }
+        public string? Paciente { get; set; }
 
         [JsonPropertyName("sexo")]
-        public string Sexo { get; set; }
+        public string? Sexo { get; set; }
 
         [JsonPropertyName("medicoTratante")]
-        public string MedicoTratante { get; set; }
+        public string? MedicoTratante { get; set; }
 
         [JsonPropertyName("seguro")]
-        public string Seguro { get; set; }
+        public string? Seguro { get; set; }
 
         [JsonPropertyName("tipoAtencion")]
-        public string TipoAtencion { get; set; }
+        public string? TipoAtencion { get; set; }
 
         [JsonPropertyName("fechaIngreso")]
         public DateTime? FechaIngreso { get; set; }
@@ -32,7 +32,7 @@ namespace vistarubros.Application.Records.Response
         public DateTime? FechaAlta { get; set; }
 
         [JsonPropertyName("detalleEpicrisis")]
-        public DetalleEpicrisis DetalleEpicrisis { get; set; } = new();
+        public List<DetalleEpicrisis> DetalleEpicrisis { get; set; } = new();
 
         [JsonPropertyName("procedimientos")]
         public List<ProcedimientoItem> Procedimientos { get; set; } = new();
@@ -43,17 +43,29 @@ namespace vistarubros.Application.Records.Response
 
     public class DetalleEpicrisis
     {
-        [JsonPropertyName("diagnosticoPrincipal")]
-        public string DiagnosticoPrincipal { get; set; }
+        [JsonPropertyName("tratamiento")]
+        public string? Tratamiento { get; set; }
 
-        [JsonPropertyName("diagnosticosSecundarios")]
-        public List<string> DiagnosticosSecundarios { get; set; } = new();
+        [JsonPropertyName("egreso")]
+        public string? Egreso { get; set; }
 
-        [JsonPropertyName("complicaciones")]
-        public string Complicaciones { get; set; }
+        [JsonPropertyName("alta")]
+        public string? Alta { get; set; }
 
-        [JsonPropertyName("observaciones")]
-        public string Observaciones { get; set; }
+        [JsonPropertyName("causaExterna")]
+        public string? CausaExterna { get; set; }
+
+        [JsonPropertyName("proximoControl")]
+        public DateTime? ProximoControl { get; set; }
+
+        [JsonPropertyName("estadoEgreso")]
+        public string? EstadoEgreso { get; set; }
+
+        [JsonPropertyName("altaMedica")]
+        public string? AltaMedica { get; set; }
+
+        [JsonPropertyName("altaVoluntaria")]
+        public string? AltaVoluntaria { get; set; }
     }
 
     public class ProcedimientoItem
@@ -62,31 +74,31 @@ namespace vistarubros.Application.Records.Response
         public DateTime? FechaIntervencion { get; set; }
 
         [JsonPropertyName("procedimiento")]
-        public string Procedimiento { get; set; }
+        public string? Procedimiento { get; set; }
 
         [JsonPropertyName("cirujano")]
-        public string Cirujano { get; set; }
+        public string? Cirujano { get; set; }
 
         [JsonPropertyName("especialidad")]
-        public string Especialidad { get; set; }
+        public string? Especialidad { get; set; }
 
         [JsonPropertyName("tipoMedico")]
-        public string TipoMedico { get; set; }
+        public string? TipoMedico { get; set; }
 
         [JsonPropertyName("horaInicio")]
-        public string HoraInicio { get; set; }
+        public string? HoraInicio { get; set; }
 
         [JsonPropertyName("horaFin")]
-        public string HoraFin { get; set; }
+        public string? HoraFin { get; set; }
 
         [JsonPropertyName("tiempoTranscurrido")]
-        public string TiempoTranscurrido { get; set; }
+        public string? TiempoTranscurrido { get; set; }
     }
 
     public class FacturaDetalle
     {
         [JsonPropertyName("numeroFactura")]
-        public string NumeroFactura { get; set; }
+        public string? NumeroFactura { get; set; }
 
         [JsonPropertyName("fechaFactura")]
         public DateTime? FechaFactura { get; set; }
@@ -110,7 +122,7 @@ namespace vistarubros.Application.Records.Response
         public long? ProCodigo { get; set; }
 
         [JsonPropertyName("rubroNombre")]
-        public string RubroNombre { get; set; }
+        public string? RubroNombre { get; set; }
 
         [JsonPropertyName("cantidad")]
         public decimal? Cantidad { get; set; }
