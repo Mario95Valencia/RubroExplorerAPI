@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MicroservicesTemplate.Domain.Repositories;
 using vistarubros.Infrastructure.Persistence.Context;
+using System.Linq.Expressions;
 
 namespace MicroservicesTemplate.Infrastructure.Repositories;
 
@@ -74,5 +75,32 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
                 throw new InvalidOperationException("The entity does not contain a Status property.");
             }
         }
+    }
+
+    public IQueryable<TEntity> AsQueryable()
+    {
+        return _context.Set<TEntity>().AsQueryable();
+    }
+
+    public async Task<TEntity?> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate)
+    {
+        return await _context.Set<TEntity>().FirstOrDefaultAsync(predicate);
+    }
+
+    public async Task<TEntity?> FirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate, params Expression<Func<TEntity, object>>[] includes)
+    {
+        IQueryable<TEntity> query = _context.Set<TEntity>();
+
+        foreach (var include in includes)
+        {
+            query = query.Include(include);
+        }
+
+        return await query.FirstOrDefaultAsync(predicate);
+    }
+
+    public async Task<List<TEntity>> GetListByConditionAsync(Expression<Func<TEntity, bool>> predicate)
+    {
+        return await _context.Set<TEntity>().Where(predicate).ToListAsync();
     }
 }

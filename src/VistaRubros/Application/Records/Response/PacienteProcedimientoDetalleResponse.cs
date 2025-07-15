@@ -31,6 +31,9 @@ namespace vistarubros.Application.Records.Response
         [JsonPropertyName("fechaAlta")]
         public DateTime? FechaAlta { get; set; }
 
+        [JsonPropertyName("protocolo")]
+        public Protocolo? Protocolo { get; set; }
+
         [JsonPropertyName("detalleEpicrisis")]
         public List<DetalleEpicrisis> DetalleEpicrisis { get; set; } = new();
 
@@ -121,6 +124,9 @@ namespace vistarubros.Application.Records.Response
         [JsonPropertyName("proCodigo")]
         public long? ProCodigo { get; set; }
 
+        [JsonPropertyName("cueDetalle")]
+        public string? CueDetalle { get; set; }
+
         [JsonPropertyName("rubroNombre")]
         public string? RubroNombre { get; set; }
 
@@ -135,5 +141,14 @@ namespace vistarubros.Application.Records.Response
 
         [JsonPropertyName("valorTotal")]
         public decimal? ValorTotal { get; set; }
+    }
+
+    public class Protocolo
+    {
+        [JsonPropertyName("proyectada")]
+        public string? Proyectada { get; set; }
+
+        [JsonPropertyName("realizada")]
+        public string? Realizada { get; set; }
     }
 }

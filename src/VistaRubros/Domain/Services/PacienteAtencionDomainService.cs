@@ -5,6 +5,8 @@ using vistarubros.Application.Records.Response;
 using vistarubros.Domain.Interfaces.IDomainServices;
 using vistarubros.Infrastructure.Persistence.Context;
 using System.Data.SqlClient;
+using vistarubros.Domain.Entities;
+using System.Linq;
 
 
 namespace vistarubros.Domain.Services
@@ -172,6 +174,7 @@ namespace vistarubros.Domain.Services
             var codigosAtencion = facturas.Select(f => f.AteCodigo).Distinct().ToList();
             var procedimientos = await ObtenerProcedimientosAsync(codigosAtencion);
             var epicrisis = await ObtenerEpicrisisAsync(codigosAtencion);
+            var protocoloOperatorio = await ObtenerProtocolo(codigosAtencion);
 
             var resultado = facturas.Select(f =>
             {
@@ -203,10 +206,19 @@ namespace vistarubros.Domain.Services
                         AltaVoluntaria = e.AltaVoluntaria
                     }).ToList();
 
+                var protocolo = protocoloOperatorio.FirstOrDefault(p => p.AteCodigo == f.AteCodigo);
+
+                var protocoloResponse = protocolo == null ? null : new Protocolo
+                {
+                    Proyectada = protocolo.Proyectada,
+                    Realizada = protocolo.Realizada
+                };
+
+
                 return new PacienteProcedimientoDetalleResponse
                 {
                     NumeroAtencion = f.AteNumero,
-                    HistoriaClinica = f.HistoriaClinica,
+                    HistoriaClinica = f.HistoriaClinica?.Trim(),
                     Paciente = f.Paciente,
                     Sexo = f.Sexo,
                     MedicoTratante = f.MedicoTratante,
@@ -215,19 +227,19 @@ namespace vistarubros.Domain.Services
                     FechaIngreso = f.FechaIngreso,
                     FechaAlta = f.FechaAlta,
 
-                    DetalleEpicrisis = epicrisis
-    .Where(e => e.AteCodigo == f.AteCodigo)
-    .Select(e => new DetalleEpicrisis
-    {
-        Tratamiento = e.Tratamiento,
-        Egreso = e.Egreso,
-        Alta = e.Alta,
-        CausaExterna = e.CausaExterna,
-        ProximoControl = e.ProximoControl,
-        EstadoEgreso = e.EstadoEgreso,
-        AltaMedica = e.AltaMedica,
-        AltaVoluntaria = e.AltaVoluntaria
-    }).ToList(),
+                    Protocolo = protocoloResponse,
+
+                    DetalleEpicrisis = epicrisis.Where(e => e.AteCodigo == f.AteCodigo).Select(e => new DetalleEpicrisis
+                    {
+                        Tratamiento = e.Tratamiento,
+                        Egreso = e.Egreso,
+                        Alta = e.Alta,
+                        CausaExterna = e.CausaExterna,
+                        ProximoControl = e.ProximoControl,
+                        EstadoEgreso = e.EstadoEgreso,
+                        AltaMedica = e.AltaMedica,
+                        AltaVoluntaria = e.AltaVoluntaria
+                    }).ToList(),
 
                     Procedimientos = procedimientosAtencion,
 
@@ -243,7 +255,7 @@ namespace vistarubros.Domain.Services
                 };
             }).ToList();
 
-            return resultado.OrderBy(r=>r.Paciente).ToList();
+            return resultado.OrderBy(r => r.Paciente).ToList();
         }
 
 
@@ -334,6 +346,7 @@ namespace vistarubros.Domain.Services
                         Items = g.Select(item => new FacturaItem
                         {
                             ProCodigo = long.TryParse(item.ProCodigo?.ToString(), out long cod) ? cod : (long?)null,
+                            CueDetalle = item.CueDetalle,
                             RubroNombre = item.RubroNombre,
                             Cantidad = item.Cantidad,
                             Iva = item.Iva,
@@ -466,7 +479,7 @@ LEFT JOIN Medico M2 ON P.CIRUJANO = M2.MED_CODIGO;
             return result.Select(e => new EpicrisisPorAtencion
             {
                 AteCodigo = e.ATE_CODIGO,
-                CuadroClinico =  e.CUADRO_CLINICO,
+                CuadroClinico = e.CUADRO_CLINICO,
                 Tratamiento = e.TRATAMIENTO,
                 Egreso = e.EGRESO,
                 Alta = e.EPI_ALTA,
@@ -477,5 +490,24 @@ LEFT JOIN Medico M2 ON P.CIRUJANO = M2.MED_CODIGO;
                 AltaVoluntaria = e.ALTA_VOLUNTARIA
             }).ToList();
         }
+
+        public async Task<List<ProtocoloPorAtencionResponse>> ObtenerProtocolo(List<long> codigosAtencion)
+        {
+            var connectionString = _context.Database.GetConnectionString();
+            using var connection = new SqlConnection(connectionString);
+            await connection.OpenAsync();
+
+            var sql = @" SELECT ATE_CODIGO, STRING_AGG(PROT_PROYECTADA, ' | ') AS PROT_PROYECTADA, STRING_AGG(PROT_REALIZADO, ' | ') AS PROT_REALIZADO FROM     His3000..HC_PROTOCOLO_OPERATORIO GROUP BY ATE_CODIGO;";
+
+            var result = await connection.QueryAsync<dynamic>(sql);
+
+            return result.Select(e => new ProtocoloPorAtencionResponse
+            {
+                AteCodigo = e.ATE_CODIGO,
+                Proyectada = e.PROT_PROYECTADA,
+                Realizada = e.PROT_REALIZADO
+            }).ToList();
+        }
+
     }
 }
