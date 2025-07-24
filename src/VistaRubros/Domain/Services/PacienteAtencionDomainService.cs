@@ -291,8 +291,7 @@ namespace vistarubros.Domain.Services
         INNER JOIN MEDICOS M ON A.MED_CODIGO = M.MED_CODIGO
         INNER JOIN TIPO_INGRESO T ON A.TIP_CODIGO = T.TIP_CODIGO
         WHERE 
-            A.ATE_FACTURA_FECHA BETWEEN @FechaInicio AND @FechaFin
-            AND A.ATE_FACTURA_PACIENTE NOT LIKE '%PRE%'
+            A.ATE_FECHA_ALTA BETWEEN @FechaInicio AND @FechaFin
     )
 
     SELECT 
